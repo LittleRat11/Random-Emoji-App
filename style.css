@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: salmon;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Roboto Slab', serif;
+}
+
+.heading {
+    font-size: 2rem;
+    color: aliceblue;
+}
+
+.container {
+    text-align: center;
+}
+
+.clicked {
+    font-size: 5rem;
+    border: none;
+    background: rgba(255, 255, 255, .2);
+    border-radius: 10px;
+    padding: 15px;
+    filter: grayscale();
+    transition: filter .2s ease-in-out;
+    cursor: pointer;
+}
+
+.clicked:hover {
+    filter: grayscale(0);
+}
+
+.para {
+    font-weight: 600;
+    color: darkblue;
+}
